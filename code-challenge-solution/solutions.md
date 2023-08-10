@@ -4,7 +4,9 @@ The question was to add an edit text that takes in phone number and enable autof
 
 ```kotlin
 // inside the AutofillDemo composable
-val phonenumber = remember{mutableStateOf("")}
+val phonenumber = remember {
+    mutableStateOf("")
+}
 
  Text(
             text = "Phonenumber",
