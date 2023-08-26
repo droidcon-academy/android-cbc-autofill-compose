@@ -23,7 +23,7 @@ private fun AutofillTextField(autoFillTypes:List<AutofillType>,
 
 val autofill = LocalAutofill.current
 
-AutofillTextField(autoFillTypes = listOf(AutofillType.PersonFullName,AutofillType.Username), onFilled = {
+AutofillTextField(autoFillTypes = listOf(AutofillType.Username), onFilled = {
     username.value = it
 }) {autofillNode ->
     OutlinedTextField(modifier = Modifier.onFocusChanged {focusState ->

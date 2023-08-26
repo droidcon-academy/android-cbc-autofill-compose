@@ -59,7 +59,7 @@ fun AutofillDemo(modifier: Modifier = Modifier) {
         Text(text = "Username", style = MaterialTheme.typography.titleMedium)
         Spacer(modifier = Modifier.height(10.dp))
 
-        AutofillTextField(autoFillTypes = listOf(AutofillType.PersonFullName,AutofillType.Username), onFilled = {
+        AutofillTextField(autoFillTypes = listOf(AutofillType.Username), onFilled = {
             username.value = it
         }) {autofillNode ->
             OutlinedTextField(modifier = Modifier.onFocusChanged {focusState ->
